@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "noEmit": false,
+        "jsx": "react",
+        "sourceMap": true
+    },
+    "include": ["src/server.ts", "src/cms/payload.config.ts"]
+}

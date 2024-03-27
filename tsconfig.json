@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@cms": ["src/cms/"],
+            "@cms/*": ["src/cms/*"],
+            "@ui": ["src/app/_ui"],
+            "@ui/*": ["src/app/_ui/*"],
+            "@utilities": ["src/app/_utilities"],
+            "@utilities/*": ["src/app/_utilities/*"],
+            "@views": ["src/app/_views"],
+            "@views/*": ["src/app/_views/*"],
+            "@components": ["src/app/_ui/components/*"],
+            "@components/*": ["src/app/_ui/components/*"],
+            "@/*": ["src/*"]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        "postcss.config.cjs",
+        "next.config.mjs",
+        ".eslintrc.cjs"
+    ],
+    "exclude": ["node_modules", "src/migrations/*"]
+}
